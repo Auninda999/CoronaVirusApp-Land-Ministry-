@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment"
+    android:background="@drawable/bg2"
+    android:orientation="vertical"
+    android:weightSum="8"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:weightSum="4"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="50sp"
+            android:text="ভূমিসেবা অ্যাপ"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:textColor="@color/darkpurple"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="35sp"
+            android:text="হাতের মুঠোয় ভূমি"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_weight="1.5"
+            android:textColor="@color/darkpurple"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="220dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            app:cardCornerRadius="30dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_playstore"
+                android:background="@drawable/bg1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+
+                >
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_google"
+                    android:gravity="center"
+                    android:id="@+id/tv10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Get on Google Play"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingRight="5dp"
+                    />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        >
+        <ImageView
+            android:id="@+id/mobile_in_hand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/mobile_in_hand"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="175dp"
+            android:layout_gravity="center"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            app:cardCornerRadius="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_centerInParent="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:background="#9C27B0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+
+                >
+                <!-- <ImageView
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:layout_margin="5dp"
+                     android:src="@drawable/hands"
+
+                     />-->
+                <!--                -->
+                <TextView
+                    android:drawableLeft="@drawable/ic_home"
+                    android:gravity="center"
+                    android:id="@+id/tv9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Home"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:paddingRight="5dp"
+                    />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
